@@ -1,7 +1,11 @@
 function Navbar(){
     return(
         <>
-        <h1>hello</h1>
+       <header className="w-full p-8 bg-[#1a2116]">
+        <nav>
+
+        </nav>
+       </header>
         
         </>
     )
