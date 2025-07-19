@@ -40,6 +40,17 @@ function Navbar() {
                 </nav>
             </header>
             
+            {isOpen &&
+                (
+                    <ul className="bg-[#1a2116] flex flex-col justify-center text-white space-y-2">
+                        <li className=" hover:underline border-b border-t border-white p-2">Home</li>
+                        <li className="flex  hover:underline border-b border-white p-2">Plants Type <ChevronDown /></li>
+                        <li className=" hover:underline border-b border-white p-2">More</li>
+                        <li className=" hover:underline border-b border-white p-2">Contact</li>
+                    </ul>
+                )}
+
+            
 
         </>
     )
