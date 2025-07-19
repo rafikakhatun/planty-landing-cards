@@ -1,7 +1,16 @@
-import { ChevronDown, Lock, Menu, Search } from "lucide-react";
+import { ChevronDown, Lock, Menu, Search, X } from "lucide-react";
 import logo from "../assets/Group 33.jpg"
+import { useState } from "react";
 
 function Navbar() {
+
+    // responsive navbar useState
+    const [isOpen, SetIsOpen] = useState(false)
+
+
+
+
+
     return (
         <>
             <header className="w-full p-2 bg-[#1a2116]">
@@ -24,16 +33,13 @@ function Navbar() {
 
 
                     {/* Hamburger Menu Button for Small Devices */}
-                    <button className="flex md:hidden">
-                        <Menu className="w-10 h-10" />
-                        </button>
+                    <button onClick={() => SetIsOpen(!isOpen)} className="flex md:hidden">
+                        {isOpen ? (<X className="w-6 h-6" />) : (<Menu className="w-10 h-10" />)}
 
-
-
-                   
-
+                    </button>
                 </nav>
             </header>
+            
 
         </>
     )
