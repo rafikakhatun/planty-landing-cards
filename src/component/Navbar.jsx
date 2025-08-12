@@ -8,12 +8,9 @@ function Navbar() {
     const [isOpen, SetIsOpen] = useState(false)
 
 
-
-
-
     return (
         <>
-            <header className="w-full p-2 bg-[#1a2116]">
+            <header className="w-full p-2 bg-[#232B20]">
                 <nav className="flex justify-between items-center text-[#C6C7C5] p-2" >
                     {/* nav logo */}
                     <div className="relative w-20 h-20">
@@ -39,7 +36,7 @@ function Navbar() {
                     </button>
                 </nav>
             </header>
-            
+
             {isOpen &&
                 (
                     <ul className="bg-[#1a2116] flex flex-col justify-center text-white space-y-2">
@@ -50,7 +47,7 @@ function Navbar() {
                     </ul>
                 )}
 
-            
+
 
         </>
     )
